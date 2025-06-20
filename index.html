@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Academy</title>
+
+    <!--=================> CSS Links  <================-->
+    <!-- link font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="shortcut icon" href="./assets/images/routeacademy_logo.jpg" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/CSS/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <!-- =================> JS Links  <================ -->
+    <!-- Bootstrap -->
+    <script src="./assets/JS/bootstrap.bundle.min.js" defer></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/3b4caca58c.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./assets/JS/index.js" defer></script>
+</head>
+
+<body >
+    <nav class="navbar navbar-expand-lg bg-primary-subtle fixed-top shadow py-3" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold text-primary" href="./index.html">
+                Route
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarScroll">
+                <ul class="navbar-nav mx-auto my-3 my-lg-0 navbar-nav-scroll gap-3">
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">Courses</a>
+                    </li>
+
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">Careers</a>
+                    </li>
+
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex gap-4 ">
+                    <button type="button" class="btn btn-outline-primary rounded-pill" id="loginBtn">Sign In</button>
+                    <button class="btn btn-outline-success rounded-pill" type="button" id="registerBtn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="main pt-5 bg-primary-subtle">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 gy-5">
+                <div class="col d-flex flex-column justify-content-center">
+                    <h2 class="fw-medium  mb-3">Welcome to <span class="text-primary">Route</span></h2>
+                    <h1>
+                        <span class="fw-bold text-success">Studying </span> Online is now much easier
+                    </h1>
+                    <p class="fw-lighter my-3">Route is the leading online learning platform in the Middle East.</p>
+                    <button class="btn btn-outline-primary mx-md-0 mx-auto rounded-pill w-50 py-2 px-3 fw-lighter " id="joinBtn">
+                        Join For Free
+                    </button>
+                </div>
+                <div class=" col d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/landing-page.png" alt="Route Academy Logo" class="w-75">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

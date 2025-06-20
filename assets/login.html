@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Academy</title>
+
+    <!--=================> CSS Links  <================-->
+    <!-- link font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/routeacademy_logo.jpg" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- =================> JS Links  <================ -->
+    <!-- Bootstrap -->
+    <script src="./JS/bootstrap.bundle.min.js" defer></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/3b4caca58c.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./JS/index.js" defer></script>
+</head>
+
+<body>
+    <main class="main bg-primary bg-opacity-10">
+        <div class="container py-4">
+            <div class="row row-cols-1 row-cols-lg-2 gx-5 ">
+                <div class="col  rounded-3 order-last oreder-lg-first ">
+                    <div class="logIn-img rounded-4 shadow-lg ">
+                    </div>
+                </div>
+                <div class="col order-first order-lg-last">
+                    <div class="login-Container py-5 ">
+                        <h5 class="fw-bold mb-4 text-center">Welcome to <span class="text-primary">Route</span></h5>
+                        <div
+                            class="rounded-pill bg-primary bg-opacity-50 py-2 w-75 mx-auto d-flex align-items-center justify-content-center gap-5 gap-lg-4">
+                            <button
+                                class=" px-4 py-1 px-lg-5 py-lg-2 shadow-lg text-white  mb-0 bg-primary rounded-pill border-0"
+                                id="signInBtn">
+                                Sign In
+                            </button>
+                            <button class=" px-4 py-1 px-lg-5 py-lg-2 mb-0 shadow-lg rounded-pill border-0"
+                                id="signUpBtn">
+                                Sign Up
+                            </button>
+                        </div>
+                        <p class="fw-bold my-5 text-center">
+                            Route is the leading online learning platform in the Middle East.
+                        </p>
+                        <form class="d-flex flex-column gap-4 px-3">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control border-primary-subtle bg-primary-subtle"
+                                    id="loginEmail" placeholder="name@example.com">
+                                <label class="text-primary" for="loginEmail">Email address</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control border-primary-subtle bg-primary-subtle"
+                                    id="loginPassword" placeholder="Password">
+                                <label class="text-primary" for="loginPassword">Password</label>
+                            </div>
+                            <button class="btn btn-submit mx-auto w-50 btn-primary rounded-pill py-2 " id="loginBtn">
+                                Login
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="notificationError" class="notification d-none  d-flex align-items-center justify-content-center">
+        <div class="box alert alert-danger rounded-2 px-4 py-2 animate__animated  animate__fadeInDown fs-5">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span id="errorMsg">Invalid Email or Password</span>
+        </div>
+    </div>
+</body>
+
+</html>

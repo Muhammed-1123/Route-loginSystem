@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Academy</title>
+
+    <!--=================> CSS Links  <================-->
+    <!-- icon -->
+    <!-- link font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/routeacademy_logo.jpg" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- =================> JS Links  <================ -->
+    <!-- Bootstrap -->
+    <script src="./JS/bootstrap.bundle.min.js" defer></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/3b4caca58c.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./JS/index.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary-subtle fixed-top shadow py-3" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold text-primary" href="#">
+                Route
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarScroll">
+                <ul class="navbar-nav mx-auto my-3 my-lg-0 navbar-nav-scroll gap-3">
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">Courses</a>
+                    </li>
+
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">Careers</a>
+                    </li>
+
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+
+                </ul>
+                <div class="user-signin d-flex gap-3">
+                    <div class="user-data ">
+                        <img src="./images/user.png" alt="user icon" class="user-icon w-100">
+                    </div>
+                    <button id="logoutBtn" class="btn btn-outline-warning rounded-pill" type="button">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="main pt-5 bg-primary-subtle">
+        <div class="container mt-5">
+            <div class="box shadow-lg p-5 text-center bg-primary-subtle">
+                <h1>Welcome <span id="userNameMsg" class="text-primary">Muhammad</span></h1>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
