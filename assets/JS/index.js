@@ -98,6 +98,46 @@ else if (location.pathname.endsWith("register.html")) {
         }
     }
 
+    userEmail.addEventListener("input", () => {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
+        if (emailRegex.test(userEmail.value)) {
+            userEmail.classList.add("is-valid");
+            userEmail.classList.remove("is-invalid");
+        } else {
+            userEmail.classList.remove("is-valid");
+            userEmail.classList.add("is-invalid");
+        }
+    })
+
+    userName.addEventListener("input", () => {
+
+        const usernameRegex = /^[a-zA-Z][a-zA-Z0-9_ ]{2,15}$/;
+        if (usernameRegex.test(userName.value)) {
+            userName.classList.add("is-valid");
+            userName.classList.remove("is-invalid");
+        } else {
+            userName.classList.remove("is-valid");
+            userName.classList.add("is-invalid");
+        }
+    })
+
+    userPassword.addEventListener("input", () => {
+        const passwordHelp = document.getElementById("passwordHelp");
+        passwordHelp.classList.remove("d-none");
+        passwordHelp.classList.add("text-danger");
+        const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,20}$/;
+        if (passwordRegex.test(userPassword.value)) {
+            passwordHelp.classList.add("d-none");
+            userPassword.classList.add("is-valid");
+            userPassword.classList.remove("is-invalid");
+        } else {
+            passwordHelp.classList.remove("d-none");
+            userPassword.classList.remove("is-valid");
+            userPassword.classList.add("is-invalid");
+        }
+    })
+
+
     // Function to clear input fields
     function clearInputFields() {
         userName.value = "";
@@ -169,7 +209,7 @@ else if (location.pathname.endsWith("home.html")) {
     const userNameMsg = document.getElementById("userNameMsg");
     // check if there is a current user in local storage and display their user name on the page
     if (!currentUser) {
-        location.replace("../index.html");
+        location.href = "../index.html";
     } else {
         userNameMsg.textContent = currentUser.userName;
     }

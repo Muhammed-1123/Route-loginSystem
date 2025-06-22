@@ -66,13 +66,14 @@
                                 <label class="text-primary" for="userName">User Name</label>
                             </div>
                             <div class="form-floating">
-                                <input type="password" class="form-control border-primary-subtle bg-primary-subtle"
+                                <input title="Password must be at least 8 characters, incl. A, a, 1 — no spaces"
+                                    type="password" class="form-control border-primary-subtle bg-primary-subtle"
                                     id="userPassword" placeholder="Password">
                                 <label class="text-primary" for="userPassword">Password</label>
+                                <small id="passwordHelp" class="d-none ">
+                                    Password must be at least 8 characters, incl. A, a, 1 — no spaces
+                                </small>
                             </div>
-                            <!-- <p class="fw-semibold text-center">you have an account?
-                                <a href="login.html" class="text-primary">Login</a>
-                            </p> -->
                             <div class="w-100 d-flex justify-content-center mt-3">
                                 <button class="btn btn-submit w-50 btn-primary rounded-pill py-2 " id="registerBtn">
                                     Sign Up
